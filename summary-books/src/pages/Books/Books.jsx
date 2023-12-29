@@ -47,7 +47,7 @@ const Books = () => {
                   <span className="material-symbols-outlined">delete</span>
                 </button>
               </h2>
-              <span>{book.author}</span>
+              <span><b>Autor:</b> {book.author}</span>
               <p>{book.summary}</p>
             </div>
           </div>
