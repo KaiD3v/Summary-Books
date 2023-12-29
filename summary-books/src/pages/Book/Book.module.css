@@ -1,0 +1,29 @@
+/* Book.module.css */
+
+.book_container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+ .book_container h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+.book_container  span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+ .book_container p {
+    color: #555;
+    line-height: 1.6;
+  }
+  

@@ -29,7 +29,7 @@ const Book = () => {
     }
  
     return (
-    <div>
+    <div className={styles.book_container}>
     <h1>{bookDetails.title}</h1>
     <span><b>Autor:</b> {bookDetails.author}</span>
     <p>{bookDetails.summary}</p>
