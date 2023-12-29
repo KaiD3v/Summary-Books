@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 // pages
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
+import Books from './pages/Books/Books'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />}/>
       <Route path='/about' element={<About />}/>
+      <Route path='/books' element={<Books />}/>
     </Routes>
     </div>
     <Footer />

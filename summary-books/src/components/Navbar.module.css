@@ -32,6 +32,26 @@
     color: #ffff;
 }
 
+@media screen and (max-width: 375px) {
+    .navbar_container {
+        justify-content: center;
+        margin: 0;
+    }
+
+    .brand {
+        font-size: 1.1em; 
+    }
+
+    .links_list {
+        margin-right: 0;
+    }
+
+    .links_list a {
+        width: 0;
+    }
+}
+
+
 @media screen and (max-width: 360px) {
 
     .navbar_container {
