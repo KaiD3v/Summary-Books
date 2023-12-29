@@ -31,9 +31,20 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: .2s ease-in-out;
+  }
+
+  .delete_btn:hover{
+    background-color: #cee;
   }
   
   h1 {
     text-align: center;
   }
-  
+
+  @media screen and (max-width: 375px) {
+    .books_container{
+        gap: 10px;
+        width: 100%;
+    }
+  }

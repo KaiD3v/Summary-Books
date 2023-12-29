@@ -20,11 +20,20 @@ const Books = () => {
     getBooks();
   }, []);
 
+  const handleDelete = async (id) => {
+    try {
+      await api.delete(`/books/${id}`);
+      getBooks();
+    } catch (err) {
+      console.error(`Erro ao deletar livro: ${err}`);
+    }
+  };
+
   return (
     <div className={styles.books_container}>
       <h1>Livros:</h1>
       {books.length === 0 ? (
-        <p>Loading...</p>
+        <p>Sem Livros...</p>
       ) : (
         books.map((book) => (
           <div key={book.id} className={styles.book_item}>
@@ -34,8 +43,8 @@ const Books = () => {
             <div className={styles.book_content}>
               <h2>
                 <Link to={`/books/${book.id}`}>{book.title}</Link>
-                <button className={styles.delete_btn}>
-                  <span class="material-symbols-outlined">delete</span>
+                <button onClick={() => handleDelete(book.id)} className={styles.delete_btn}>
+                  <span className="material-symbols-outlined">delete</span>
                 </button>
               </h2>
               <span>{book.author}</span>

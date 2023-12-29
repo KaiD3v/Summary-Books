@@ -21,7 +21,8 @@ const Home = () => {
         title,
         author,
         summary,
-        imageUrl
+        imageUrl,
+        bookId: 1
       }
       const response = await api.post('/postbook', newBook);
       console.log('Resposta do servidor:', response.data);

@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Books from './pages/Books/Books'
+import Book from './pages/Book/Book'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <Route path='/' element={<Home />}/>
       <Route path='/about' element={<About />}/>
       <Route path='/books' element={<Books />}/>
+      <Route path="/books/:id" component={Book} />
     </Routes>
     </div>
     <Footer />
