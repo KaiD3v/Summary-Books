@@ -1,0 +1,35 @@
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.carousel img {
+  height: 45vh;
+  width: 85%;
+}
+
+.carousel button {
+  font-weight: bold;
+  background-color: rgba(123, 132, 136, 0.2);
+  border: none;
+  margin: 2rem;
+  cursor: pointer;
+  height: none;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel button {
+    margin: 0; /* Redefina a margem para 0 em telas menores */
+    background-color: transparent;
+  }
+
+  .carousel button:hover{
+    background-color: none;
+  }
+}
+
+.carousel button:hover {
+    background-color: rgba(159, 214, 238, 0.8);
+}
