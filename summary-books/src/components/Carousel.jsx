@@ -3,9 +3,9 @@ import styles from "./Carousel.module.css";
 
 const Carousel = () => {
   const urls = [
-    "https://classic.exame.com/wp-content/uploads/2021/12/leitura.jpg?quality=70&strip=info&w=1024",
-    "https://super.abril.com.br/wp-content/uploads/2020/08/14-08_livros_SITE.jpg?quality=90&strip=info&w=1024&resize=1200,800",
-    "https://res.cloudinary.com/printstore/image/upload/v1690296291/g%C3%AAneros-de-livros.jpg",
+    "https://i.pinimg.com/originals/40/44/ee/4044eeb36d5096b29b19c8f1831d9997.jpg",
+    "https://i.pinimg.com/originals/d7/69/ea/d769eaeb9fa5462b2df8087c55be551e.jpg",
+    "https://images.squarespace-cdn.com/content/v1/619c039121371d019c7b3da0/1638314069042-90ALCXD5FK66ZKTROU0W/Resources-Banner.jpg?format=2500w",
   ];
 
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
